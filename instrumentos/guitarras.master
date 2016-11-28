@@ -1,0 +1,22 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Principal.master" AutoEventWireup="true" CodeFile="guitarras.master.cs" Inherits="instrumentos_guitarras" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentMenuContextual1" runat="server">
+
+    <ul id="menuContextual">
+        <li><a href="acusticas.aspx">Guitarras Acústicas</a> </li>
+        <li><a href="electricas.aspx">Guitarras Eléctricas</a> </li>
+        <li><a href="clasicas.aspx"> Guitarras Clásicas</a> </li>
+
+    </ul>
+
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+       <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+              </asp:ContentPlaceHolder>
+</asp:Content>
+

@@ -1,0 +1,188 @@
+﻿body {
+    background-image: url(https://riffsofwisdom.files.wordpress.com/2012/03/mccabes9.jpg);
+
+        background-size: cover;
+        
+
+}
+#cabecera {
+    height: 150px;
+    background-color: #000;
+    color: white;
+    border: 1px dashed #f00;
+    box-shadow: 0px 0px 10px 10px #ebcdcd;
+    position: relative;
+    z-index: 2;
+}
+
+#contenidoCabecera {
+    width: 960px;
+    margin: auto;
+}
+#barraHorizontal 
+{
+    height: 40px;
+    background-color: #970404;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow:0px 0px 10px #808080 inset;
+    text-align: center;
+}
+
+#barraHorizontal > ul
+{
+    list-style-type: none; 
+    padding:0;
+    margin: 0;
+
+}
+#barraHorizontal li 
+{
+    display: inline-block; 
+    padding: 10px;
+    cursor: pointer;
+    background-color: #000;;
+    color: #000;
+    box-shadow: 0px 0px 5px #000 inset;
+        
+
+}
+#barraHorizontal li > a
+{
+    display: block;
+    color: #ffeb05;
+    text-decoration: none;
+    font-weight: bold;
+    height: 14px;
+}
+
+#logotipo {
+    width: 35%;
+    height:20%;
+    float: left;
+    text-align: center ;
+    margin-top: 10px;
+    
+}
+#logotipo > img {
+    box-shadow: 0px 0px 5px #000;
+    height: 89px;
+    width: 150px;
+}
+
+#titulo {
+    width: 20%;
+
+    float: left;
+    text-shadow: 2px 2px 3px #4800ff;
+}
+
+
+    #titulo > h1 {
+        margin-top: 12px;
+        font-family: 'SketchFlow Print';
+        font-size: 20px;
+    width: 132px;
+}
+
+    
+
+            
+    
+    #titulo > h2 {
+        margin-bottom: 0;
+    height: 34px;
+}
+#bajo {
+    width: 960px;
+    margin: auto;
+    background-color: #cfc50d;
+    border-radius: 0px 0px 20px 20px;
+    overflow: auto;
+    box-shadow: 0px 0px 10px #000;
+    height: 21px;
+}
+
+#columnIzq, #columnDer {
+    float: left;
+    width: 20%;
+    min-height:500px;
+}
+
+#columnCentro {
+    float: left;
+    width: 850px;
+    min-height: 800px;
+    background-color: rgba(0, 0, 0, 0.60);
+    margin:50px 0;
+    box-shadow: 0px 0px 10px #000 inset;
+}
+.slider {
+
+    width: 95%;
+    margin: auto;
+}
+    .slider ul {
+        display: flexbox;
+        padding: 0;
+        width: 400%;
+    }
+    .slider li {
+        width: 100%;
+        list-style: none;
+
+    }
+    .slider img {
+        width: 100%;
+    }
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+    20% {
+        margin-left: 0;
+    }
+    25% {
+        margin-left: -1004%;
+    }
+    45% {
+        margin-left: -1004%;
+    }
+}
+
+#menuContextual
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 50px 0; 
+}
+#menuContextual >li 
+{
+    padding: 10px;
+    text-align: center; 
+    background-color: #000;
+    border: 1px outset #000;
+    box-shadow: 0px 0px 10px #000 inset;
+
+}
+#menuContextual li > a
+{
+    text-decoration: none;
+    color: white; 
+
+}
+
+
+#pie
+ {
+    height:30px;
+    background-color: #970404;
+    border-radius: 0px 0px 20px 20px; 
+    clear: both;
+    box-shadow: 0px 0px 5px #000 inset;
+    color: white;
+    text-align: center;
+   
+    padding-top: 5px;
+    
+}
+

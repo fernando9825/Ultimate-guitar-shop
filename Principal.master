@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Principal.master.cs" Inherits="Principal" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>GShop- All You Can Play</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+   
+  
+</head>
+<body>
+    
+    <form id="form1" runat="server">
+    <div>
+        <div id= "cabecera">
+            <div id="contenidoCabecera">
+            <div id="barraHorizontal">
+                
+
+               
+                <ul>
+                    <li><a href="/Default.aspx">Inicio</a></li>
+                    <li><a href="/instrumentos/acusticas.aspx">Guitarras</a></li>
+                    <li><a href="/clientes/login.aspx">Iniciar sesión</a></li>
+                    <li><a href="/clientes/registrarse.aspx">Registrarse</a></li>
+                    <li><a href="/Contacto/Contacto.aspx">Contactanos</a></li>
+                    <li><a href="registro_productos.aspx">Registrar productos</a></li>
+                </ul>
+
+        </div>
+                <div id="logotipo">
+                    <img src="http://data.bloggif.com/distant/user/store/f/1/4/2/e7e20341993b0dfabd2a6e1988b6241f.png" alt="Montaje creado Bloggif" />
+                    </div>
+                <div id="titulo">
+                    <h1>G Shop</h1>
+                    <h3>"All You Can Play"</h3>
+                    </div>
+                &nbsp;&nbsp;&nbsp;
+                </div>
+            </div>
+        <div id="bajo"></div>
+        <div id="columnIzq">
+             <asp:ContentPlaceHolder ID="ContentMenuContextual1" runat="server">
+                 
+              
+        </asp:ContentPlaceHolder>
+        </div>
+        <div id="columnCentro">
+             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+              </asp:ContentPlaceHolder>
+        </div>
+        <div id="columnDer">
+            <div class="slider">
+                <ul>
+                    <li><img src="PAGINAWEBIMAGENES/descarga(1)" alt=""/></li>
+                     <li><img src="PAGINAWEBIMAGENES/aristoteles" alt=""/></li>
+                </ul>
+
+                 
+
+
+            </div>
+
+        </div>
+        <div id="pie">
+            <span>Estás en GShop&nbsp;&nbsp;
+            <br />
+            </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br />
+&nbsp;&nbsp;&nbsp;&nbsp;
+            <br />
+
+        </div>
+        </div>
+       
+    
+    </form>
+</body>
+</html>
