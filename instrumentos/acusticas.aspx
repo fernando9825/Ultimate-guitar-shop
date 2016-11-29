@@ -71,19 +71,19 @@
             <asp:Image ID="Image7" runat="server" ImageUrl="~/imagenes/Acusticas/mitchell md100.png" Width="189px" />
             <br />
             <br />
-            <asp:Button ID="Button7" runat="server" Text="Comprar" ToolTip="Haga click para realizar una compra" />
+            <asp:Button ID="Button7" runat="server" Text="Comprar" ToolTip="Haga click para realizar una compra" OnClick="Button7_Click" />
         </td>
         <td>
             <asp:Image ID="Image8" runat="server" ImageUrl="~/imagenes/Acusticas/mitchell mx420.png" />
             <br />
             <br />
-            <asp:Button ID="Button8" runat="server" Text="Comprar" ToolTip="Haga click para realizar una compra" />
+            <asp:Button ID="Button8" runat="server" Text="Comprar" ToolTip="Haga click para realizar una compra" OnClick="Button8_Click" />
         </td>
         <td>
             <asp:Image ID="Image9" runat="server" ImageUrl="~/imagenes/Acusticas/rogue blue.png" />
             <br />
             <br />
-            <asp:Button ID="Button9" runat="server" Text="Comprar" ToolTip="Haga click para realizar una compra" />
+            <asp:Button ID="Button9" runat="server" Text="Comprar" ToolTip="Haga click para realizar una compra" OnClick="Button9_Click" />
         </td>
         <td>&nbsp;</td>
     </tr>
@@ -93,19 +93,19 @@
             <asp:Image ID="Image10" runat="server" ImageUrl="~/imagenes/Acusticas/rogue concert.png" />
             <br />
             <br />
-            <asp:Button ID="Button10" runat="server" Text="Comprar" ToolTip="Haga click para realizar una compra" />
+            <asp:Button ID="Button10" runat="server" Text="Comprar" ToolTip="Haga click para realizar una compra" OnClick="Button10_Click" />
         </td>
         <td>
             <asp:Image ID="Image11" runat="server" ImageUrl="~/imagenes/Acusticas/Rogue Ra 090 Dreadnought guitarra acustica  $49.97.png" />
             <br />
             <br />
-            <asp:Button ID="Button11" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." />
+            <asp:Button ID="Button11" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." OnClick="Button11_Click" />
         </td>
         <td>
             <asp:Image ID="Image12" runat="server" ImageUrl="~/imagenes/Acusticas/rogue rg 624.png" />
             <br />
             <br />
-            <asp:Button ID="Button12" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." />
+            <asp:Button ID="Button12" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." OnClick="Button12_Click" />
         </td>
         <td>&nbsp;</td>
     </tr>
@@ -115,19 +115,19 @@
             <asp:Image ID="Image13" runat="server" ImageUrl="~/imagenes/Acusticas/rogue starter acoustic guitar.png" />
             <br />
             <br />
-            <asp:Button ID="Button13" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." />
+            <asp:Button ID="Button13" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." OnClick="Button13_Click" />
         </td>
         <td>
             <asp:Image ID="Image14" runat="server" ImageUrl="~/imagenes/Acusticas/rogue yellow.png" />
             <br />
             <br />
-            <asp:Button ID="Button14" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." />
+            <asp:Button ID="Button14" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." OnClick="Button14_Click" />
         </td>
         <td>
             <asp:Image ID="Image15" runat="server" ImageUrl="~/imagenes/Acusticas/savannah sdg 10.png" />
             <br />
             <br />
-            <asp:Button ID="Button15" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." />
+            <asp:Button ID="Button15" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." OnClick="Button15_Click" />
         </td>
         <td>&nbsp;</td>
     </tr>
@@ -137,19 +137,19 @@
             <asp:Image ID="Image16" runat="server" ImageUrl="~/imagenes/Acusticas/rogue cutawat.png" />
             <br />
             <br />
-            <asp:Button ID="Button16" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." />
+            <asp:Button ID="Button16" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." OnClick="Button16_Click" />
         </td>
         <td>
             <asp:Image ID="Image17" runat="server" ImageUrl="~/imagenes/Acusticas/alvarez 50th anniversary.png" />
             <br />
             <br />
-            <asp:Button ID="Button17" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." />
+            <asp:Button ID="Button17" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." OnClick="Button17_Click" />
         </td>
         <td>
             <asp:Image ID="Image18" runat="server" ImageUrl="~/imagenes/Acusticas/alvarez grand.png" />
             <br />
             <br />
-            <asp:Button ID="Button20" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." />
+            <asp:Button ID="Button20" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." OnClick="Button20_Click" />
         </td>
         <td>&nbsp;</td>
     </tr>
@@ -159,19 +159,19 @@
             <asp:Image ID="Image19" runat="server" ImageUrl="~/imagenes/Acusticas/alvarez parlor.png" />
             <br />
             <br />
-            <asp:Button ID="Button21" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." />
+            <asp:Button ID="Button21" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." OnClick="Button21_Click" />
         </td>
         <td>
             <asp:Image ID="Image20" runat="server" ImageUrl="~/imagenes/Acusticas/luna guitars vista eagle.png" />
             <br />
             <br />
-            <asp:Button ID="Button22" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." />
+            <asp:Button ID="Button22" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." OnClick="Button22_Click" />
         </td>
         <td>
             <asp:Image ID="Image21" runat="server" ImageUrl="~/imagenes/Acusticas/recording king dirty.png" />
             <br />
             <br />
-            <asp:Button ID="Button23" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." />
+            <asp:Button ID="Button23" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." OnClick="Button23_Click" />
         </td>
         <td>&nbsp;</td>
     </tr>
