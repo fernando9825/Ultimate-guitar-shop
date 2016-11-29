@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Data;
 using System.Data.SqlClient;
+using System.Web.UI;
 
 /// <summary>
 /// Descripción breve de conexion
@@ -15,12 +16,24 @@ public class conexion
     public string nombre;
     public string apellido;
 
+    //VARIABLES PARA BUSCAR PRODUCTO Y COMPRAR//
+
+    public string nombreproducto;
+    public string marca;
+    public string descripcion;
+    public string precio;
+    public string existencias;
+
+    //VARIABLES PARA BUSCAR PRODUCTO Y COMPRAR//
+
     /* CONEXION
      * CON
      * BASE DE DATOS */
 
     SqlConnection con = new SqlConnection("Data Source = guitarshop.mssql.somee.com; Persist Security Info=True;User ID = fernando9825_SQLLogin_2; Password=8nwapgzhqt");
     public SqlCommand comando;
+
+    public object Response { get; private set; }
 
     //METODO CONECTAR//
 
@@ -132,7 +145,45 @@ public class conexion
         }
     }
 
-    
+
+
+    //COMPRAR
+
+
+    public void buscarproducto()
+    {
+
+
+        try
+        {
+            SqlConnection con2 = new SqlConnection("Data Source = guitarshop.mssql.somee.com; Persist Security Info=True;User ID = fernando9825_SQLLogin_2; Password=8nwapgzhqt");
+            con2.Open();
+            string cadsql = "select *from Guitarras where producto ='" + nombreproducto + "'";
+            SqlCommand comando = new SqlCommand(cadsql, con2);
+            SqlDataReader leer = comando.ExecuteReader();
+
+            if (leer.Read() == true)
+            {
+                
+                marca = leer["marca"].ToString();
+                precio = leer["precio"].ToString();
+                existencias = leer["existencias"].ToString();
+                descripcion = leer["descripcion"].ToString();
+                
+
+            }
+            else
+            {
+              
+            }
+        }
+        catch (Exception)
+        {
+
+
+        }
+    }
+
 
 }
 
