@@ -8,6 +8,27 @@
         .auto-style2 {
             margin-left: 0px;
         }
+        .auto-style3 {
+            font-size: large;
+            color: #FFFFFF;
+        }
+        .auto-style4 {
+            font-size: x-large;
+            color: #FFFFFF;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .auto-style5 {
+            font-size: large;
+            color: #FFFFFF;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+        .auto-style6 {
+            font-size: medium;
+            color: #FFFFFF;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentMenuContextual1" Runat="Server">
@@ -19,27 +40,35 @@
                 <asp:Image ID="imagenproducto" runat="server" Width="207px" />
             </td>
             <td colspan="6">
-                <asp:Label ID="lblproducto" runat="server" Text="Nombre de producto"></asp:Label>
+                <strong>
+                <asp:Label ID="lblmarca" runat="server" Text="Marca del producto" CssClass="auto-style4" ></asp:Label>
+                </strong>
             </td>
         </tr>
         <tr>
             <td colspan="6">
-                <asp:Label ID="lblmarca" runat="server" Text="Marca del producto"></asp:Label>
+                <asp:Label ID="lblproducto" runat="server" Text="Nombre de producto" CssClass="auto-style5" ></asp:Label>
             </td>
         </tr>
         <tr>
             <td colspan="6">
-                <asp:Label ID="lbldescripcion" runat="server" Text="Descripcion"></asp:Label>
+                <em>
+                <asp:Label ID="lbldescripcion" runat="server" Text="Descripcion" CssClass="auto-style6" ></asp:Label>
+                </em>
             </td>
         </tr>
         <tr>
             <td>
-                <asp:Label ID="Label1" runat="server" Text="Precio:"></asp:Label>
-                <asp:Label ID="lblprecio" runat="server"></asp:Label>
+                <strong>
+                <asp:Label ID="Label1" runat="server" Text="Precio:" CssClass="auto-style3" ></asp:Label>
+                <asp:Label ID="lblprecio" runat="server" CssClass="auto-style3"></asp:Label>
+                </strong>
             </td>
             <td>
-                <asp:Label ID="Label2" runat="server" Text="Existencias:"></asp:Label>
-                <asp:Label ID="lblexistencias" runat="server"></asp:Label>
+                <strong>
+                <asp:Label ID="Label2" runat="server" Text="Existencias:" CssClass="auto-style3" ></asp:Label>
+                <asp:Label ID="lblexistencias" runat="server" CssClass="auto-style3" ></asp:Label>
+                </strong>
             </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>

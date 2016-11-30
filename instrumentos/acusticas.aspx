@@ -32,7 +32,7 @@
             <asp:Image ID="Image2" runat="server" ImageUrl="~/imagenes/Acusticas/hohner hag.png" />
             <br />
             <br />
-            <asp:Button ID="Button2" runat="server" Text="Comprar" ToolTip="Haga click para realizar una compra" OnClick="Button2_Click" />
+            <asp:Button ID="Button2" runat="server" Text="Comprar" ToolTip="Haga click para realizar una compra" OnClick="Button2_Click" style="height: 26px" />
         </td>
         <td>
             <asp:Image ID="Image3" runat="server" ImageUrl="~/imagenes/Acusticas/jasmine cutaway.png" />

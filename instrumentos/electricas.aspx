@@ -33,19 +33,19 @@
                 <asp:Image ID="Image1" runat="server" ImageUrl="~/imagenes/Electricas/b.c. rich tempered.png" />
                 <br />
                 <br />
-                <asp:Button ID="Button1" runat="server" Text="Comprar" ToolTip="Haga click para realizar una compra" />
+                <asp:Button ID="Button1" runat="server" Text="Comprar" ToolTip="Haga click para realizar una compra" OnClick="Button1_Click" />
             </td>
             <td>
                 <asp:Image ID="Image2" runat="server" ImageUrl="~/imagenes/Electricas/cort mbc.png" />
                 <br />
                 <br />
-                <asp:Button ID="Button2" runat="server" Text="Comprar" ToolTip="Haga click para realizar una compra" />
+                <asp:Button ID="Button2" runat="server" Text="Comprar" ToolTip="Haga click para realizar una compra" OnClick="Button2_Click" />
             </td>
             <td>
                 <asp:Image ID="Image3" runat="server" ImageUrl="~/imagenes/Electricas/D'Angelico EX-175.png" />
                 <br />
                 <br />
-                <asp:Button ID="Button3" runat="server" Text="Comprar" ToolTip="Haga click para realizar una compra" />
+                <asp:Button ID="Button3" runat="server" Text="Comprar" ToolTip="Haga click para realizar una compra" OnClick="Button3_Click" />
             </td>
             <td>&nbsp;</td>
         </tr>
@@ -55,19 +55,19 @@
                 <asp:Image ID="Image4" runat="server" ImageUrl="~/imagenes/Electricas/D'Angelico EX-DC.png" />
                 <br />
                 <br />
-                <asp:Button ID="Button4" runat="server" Text="Comprar" ToolTip="Haga click para realizar una compra" />
+                <asp:Button ID="Button4" runat="server" Text="Comprar" ToolTip="Haga click para realizar una compra" OnClick="Button4_Click" />
             </td>
             <td>
                 <asp:Image ID="Image5" runat="server" ImageUrl="~/imagenes/Electricas/D'Angelico EX-SS Deluxe.png" />
                 <br />
                 <br />
-                <asp:Button ID="Button5" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." />
+                <asp:Button ID="Button5" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." OnClick="Button5_Click" />
             </td>
             <td>
                 <asp:Image ID="Image6" runat="server" ImageUrl="~/imagenes/Electricas/fg-521.png" />
                 <br />
                 <br />
-                <asp:Button ID="Button6" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." />
+                <asp:Button ID="Button6" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." OnClick="Button6_Click" />
             </td>
             <td>&nbsp;</td>
         </tr>
@@ -77,19 +77,19 @@
                 <asp:Image ID="Image7" runat="server" Height="189px" ImageUrl="~/imagenes/Electricas/hofner shorty.png" Width="208px" />
                 <br />
                 <br />
-                <asp:Button ID="Button7" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." />
+                <asp:Button ID="Button7" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." OnClick="Button7_Click" />
             </td>
             <td>
                 <asp:Image ID="Image8" runat="server" ImageUrl="~/imagenes/Electricas/mitchell md200.png" />
                 <br />
                 <br />
-                <asp:Button ID="Button8" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." />
+                <asp:Button ID="Button8" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." OnClick="Button8_Click" />
             </td>
             <td>
                 <asp:Image ID="Image9" runat="server" ImageUrl="~/imagenes/Electricas/mitchell md400 modern rock.png" />
                 <br />
                 <br />
-                <asp:Button ID="Button9" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." />
+                <asp:Button ID="Button9" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." OnClick="Button9_Click" />
             </td>
             <td>&nbsp;</td>
         </tr>
@@ -99,19 +99,19 @@
                 <asp:Image ID="Image10" runat="server" ImageUrl="~/imagenes/Electricas/mitchell mm100.png" />
                 <br />
                 <br />
-                <asp:Button ID="Button10" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." />
+                <asp:Button ID="Button10" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." OnClick="Button10_Click" />
             </td>
             <td>
                 <asp:Image ID="Image11" runat="server" ImageUrl="~/imagenes/Electricas/mitchell ms400.png" />
                 <br />
                 <br />
-                <asp:Button ID="Button11" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." />
+                <asp:Button ID="Button11" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." OnClick="Button11_Click" />
             </td>
             <td>
                 <asp:Image ID="Image12" runat="server" ImageUrl="~/imagenes/Electricas/rogue rocketeer deluxe.png" Width="193px" />
                 <br />
                 <br />
-                <asp:Button ID="Button12" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." />
+                <asp:Button ID="Button12" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." OnClick="Button12_Click" />
             </td>
             <td>&nbsp;</td>
         </tr>
@@ -121,19 +121,19 @@
                 <asp:Image ID="Image13" runat="server" ImageUrl="~/imagenes/Electricas/rogue rocketeer.png" />
                 <br />
                 <br />
-                <asp:Button ID="Button13" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." />
+                <asp:Button ID="Button13" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." OnClick="Button13_Click" />
             </td>
             <td>
                 <asp:Image ID="Image14" runat="server" Height="198px" ImageUrl="~/imagenes/Electricas/you rock midi guitar.png" />
                 <br />
                 <br />
-                <asp:Button ID="Button14" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." />
+                <asp:Button ID="Button14" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." OnClick="Button14_Click" />
             </td>
             <td>
                 <asp:Image ID="Image15" runat="server" ImageUrl="~/imagenes/Electricas/rich mockingbird.png" />
                 <br />
                 <br />
-                <asp:Button ID="Button15" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." />
+                <asp:Button ID="Button15" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." OnClick="Button15_Click" />
                 <br />
             </td>
             <td>&nbsp;</td>
@@ -144,19 +144,19 @@
                 <asp:Image ID="Image16" runat="server" ImageUrl="~/imagenes/Electricas/rich set neck.png" />
                 <br />
                 <br />
-                <asp:Button ID="Button16" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." />
+                <asp:Button ID="Button16" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." OnClick="Button16_Click" />
             </td>
             <td>
                 <asp:Image ID="Image17" runat="server" ImageUrl="~/imagenes/Electricas/rich warbeast with double tremolo.png" />
                 <br />
                 <br />
-                <asp:Button ID="Button17" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." />
+                <asp:Button ID="Button17" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." OnClick="Button17_Click" />
             </td>
             <td>
                 <asp:Image ID="Image18" runat="server" ImageUrl="~/imagenes/Electricas/rick warlock with double tremolo.png" />
                 <br />
                 <br />
-                <asp:Button ID="Button18" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." />
+                <asp:Button ID="Button18" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." OnClick="Button18_Click" />
             </td>
             <td>&nbsp;</td>
         </tr>
@@ -166,19 +166,19 @@
                 <asp:Image ID="Image19" runat="server" ImageUrl="~/imagenes/Electricas/laguna le50.png" />
                 <br />
                 <br />
-                <asp:Button ID="Button19" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." />
+                <asp:Button ID="Button19" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." OnClick="Button19_Click" />
             </td>
             <td>
                 <asp:Image ID="Image20" runat="server" ImageUrl="~/imagenes/Electricas/Open Box D.png" />
                 <br />
                 <br />
-                <asp:Button ID="Button20" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." />
+                <asp:Button ID="Button20" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." OnClick="Button20_Click" />
             </td>
             <td>
                 <asp:Image ID="Image21" runat="server" ImageUrl="~/imagenes/Electricas/open box series violin.png" />
                 <br />
                 <br />
-                <asp:Button ID="Button21" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." />
+                <asp:Button ID="Button21" runat="server" Text="Comprar" ToolTip="Haga click aqui, para información del producto." OnClick="Button21_Click" />
             </td>
             <td>&nbsp;</td>
         </tr>

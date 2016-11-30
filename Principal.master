@@ -27,7 +27,7 @@
                     <li><a href="/clientes/login.aspx">Iniciar sesión</a></li>
                     <li><a href="/clientes/registrarse.aspx">Registrarse</a></li>
                     <li><a href="/Contacto/Contacto.aspx">Contactanos</a></li>
-                    <li><a href="registro_productos.aspx">Registrar productos</a></li>
+                    <li><a href="../registro_productos.aspx">Registrar productos</a></li>
                 </ul>
 
         </div>
