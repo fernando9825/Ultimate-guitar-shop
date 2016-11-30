@@ -24,7 +24,7 @@ public partial class compra_facturacion_compra : System.Web.UI.Page
         try
         {
             
-            if (Session["comprobar"].ToString() == null & Session["persona"] == null)
+            if (Session["comprobar"].ToString() != null & Session["persona"] == null)
              {
                 btninicar.Enabled = true;
                 btninicar.Visible = true;
