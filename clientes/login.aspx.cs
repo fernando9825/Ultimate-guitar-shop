@@ -36,6 +36,8 @@ public partial class clientes_login : System.Web.UI.Page
         {
 
             Session["persona"] = con.nombre + " " + con.apellido;
+            Session["nombrecliente"] = con.nombre;
+            Session["apellidocliente"] = con.apellido;
             
             Response.Redirect("../default.aspx");          
             

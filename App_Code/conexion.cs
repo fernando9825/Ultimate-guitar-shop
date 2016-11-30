@@ -30,7 +30,7 @@ public class conexion
      * CON
      * BASE DE DATOS */
 
-    SqlConnection con = new SqlConnection("Data Source = guitarshop.mssql.somee.com; Persist Security Info=True;User ID = fernando9825_SQLLogin_2; Password=8nwapgzhqt");
+    SqlConnection con = new SqlConnection("Data Source=.\\express;Initial Catalog=Tiendaguitarras;Integrated Security=True;Pooling=False");
     public SqlCommand comando;
 
     public object Response { get; private set; }
@@ -122,7 +122,7 @@ public class conexion
 
         try
         {
-            SqlConnection con1 = new SqlConnection("Data Source = guitarshop.mssql.somee.com; Persist Security Info=True;User ID = fernando9825_SQLLogin_2; Password=8nwapgzhqt");
+            SqlConnection con1 = new SqlConnection("Data Source=.\\express;Initial Catalog=Tiendaguitarras;Integrated Security=True;Pooling=False");
             con1.Open();
             string cadsql = "SELECT *FROM Registro WHERE usuario ='" + busca + "'";
             SqlCommand comando = new SqlCommand(cadsql, con1);

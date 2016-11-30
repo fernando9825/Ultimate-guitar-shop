@@ -308,18 +308,10 @@ public partial class compra_facturacion_compra : System.Web.UI.Page
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+    protected void btncomprar_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("../compra-facturacion/factura.aspx");
+    }
 }
 
 

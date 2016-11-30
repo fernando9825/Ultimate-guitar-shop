@@ -26,6 +26,7 @@
             <asp:Image ID="Image1" runat="server" ImageUrl="~/imagenes/Acusticas/breedlove pursuit.png" />
             <br />
             <br />
+            <br />
             <asp:Button ID="Button1" runat="server" Text="Comprar" ToolTip="Haga click para realizar una compra" OnClick="Button1_Click" />
         </td>
         <td>
@@ -46,6 +47,7 @@
         <td>&nbsp;</td>
         <td>
             <asp:Image ID="Image4" runat="server" ImageUrl="~/imagenes/Acusticas/luna guitars gypsy.png" />
+            <br />
             <br />
             <asp:Button ID="Button18" runat="server" Text="Comprar" ToolTip="Haga click para realizar una compra" OnClick="Button18_Click" />
             <br />

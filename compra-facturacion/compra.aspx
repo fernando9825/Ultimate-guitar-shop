@@ -74,7 +74,7 @@
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>
-                <asp:Button ID="btncomprar" runat="server" CssClass="auto-style2" Text="Comprar!" />
+                <asp:Button ID="btncomprar" runat="server" CssClass="auto-style2" Text="Comprar!" OnClick="btncomprar_Click" />
             </td>
         </tr>
     </table>
