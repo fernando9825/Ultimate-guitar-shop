@@ -23,8 +23,11 @@ public class conexion
     public string descripcion;
     public string precio;
     public string existencias;
+    public string nombreparafactura;
+
 
     //VARIABLES PARA BUSCAR PRODUCTO Y COMPRAR//
+    public string numerofactura;
 
     /* CONEXION
      * CON
@@ -175,6 +178,31 @@ public class conexion
             else
             {
               
+            }
+        }
+        catch (Exception)
+        {
+
+
+        }
+    }
+
+    public void Factura()
+    {
+        try
+        {
+            SqlConnection con3 = new SqlConnection("Data Source=.\\express;Initial Catalog=Tiendaguitarras;Integrated Security=True;Pooling=False");
+            con3.Open();
+            string cadsql = "SELECT *FROM Factura WHERE nombre ='" + nombreparafactura + "'";
+            SqlCommand comando = new SqlCommand(cadsql, con3);
+            SqlDataReader leer = comando.ExecuteReader();
+
+            if (leer.Read() == true)
+            {
+
+                numerofactura = leer["Id"].ToString();
+                
+                
             }
         }
         catch (Exception)

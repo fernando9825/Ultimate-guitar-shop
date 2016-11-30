@@ -11,10 +11,39 @@ public partial class compra_facturacion_compra : System.Web.UI.Page
 
 
 
-
+    
     protected void Page_Load(object sender, EventArgs e)
-
     {
+        btninicar.Enabled = false;
+        btninicar.Visible = false;
+        btnregistrar.Enabled = false;
+        btnregistrar.Visible = false;
+        lblinformacion.Visible = false;
+        Session["aviso"] = "Lo sentimos, sera necesario que inicies sesión o registrarte para que puedas llevar a cabo la comprar del producto.";
+
+        try
+        {
+            
+            if (Session["comprobar"].ToString() == null & Session["persona"] == null)
+             {
+                btninicar.Enabled = true;
+                btninicar.Visible = true;
+                btnregistrar.Enabled = true;
+                btnregistrar.Visible = true;
+                lblinformacion.Visible = true;
+                lblinformacion.Enabled = true;
+                lblinformacion.Text = Session["aviso"].ToString();
+                Session.Remove("comprobar");
+            }
+            else
+            {
+                Session["comprobar"] = "si";
+            }
+       
+    }
+        catch { }
+
+        
         try
         {
             lblproducto.Text = Session["nombreproducto"].ToString();
@@ -310,7 +339,47 @@ public partial class compra_facturacion_compra : System.Web.UI.Page
 
     protected void btncomprar_Click(object sender, EventArgs e)
     {
-        Response.Redirect("../compra-facturacion/factura.aspx");
+        Session["comprobar"] = "si";
+        redireccionar();
+    }
+    public int verficar = 0;
+    public void redireccionar()
+    {
+
+        
+        try
+        {
+            
+            if (Session["persona"].ToString() == null)
+            {  
+               Session["comprobar"] = "si";
+                btninicar.Enabled = true;
+                btninicar.Visible = true;
+                btnregistrar.Enabled = true;
+                btnregistrar.Visible = true;
+                lblinformacion.Visible = true;
+                lblinformacion.Enabled = true;
+                lblinformacion.Text = Session["aviso"].ToString();
+            }
+            else
+            {
+                Response.Redirect("../compra-facturacion/factura.aspx");
+                Session.Remove("comprobar");
+            }
+            
+        }
+        catch (Exception)
+        {
+
+        }
+
+
+    }
+
+    public void mensaje()
+    {
+        string script6 = "alert('Hola, ... disculpa las molestias, sera necesario que te registres para proceder con la compra')";
+        ScriptManager.RegisterStartupScript(this, typeof(Page), "Informacion", script6, true);
     }
 }
 

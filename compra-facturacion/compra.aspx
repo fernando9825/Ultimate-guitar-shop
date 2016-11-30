@@ -29,6 +29,14 @@
             color: #FFFFFF;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
+        .auto-style7 {
+            text-align: center;
+        }
+        .auto-style8 {
+            color: #FFFFFF;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: large;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentMenuContextual1" Runat="Server">
@@ -78,5 +86,22 @@
             </td>
         </tr>
     </table>
+    <br /><br />
+    <table class="auto-style1">
+        <tr>
+            <td class="auto-style7"><strong>
+                <asp:Label ID="lblinformacion" runat="server" CssClass="auto-style8"></asp:Label>
+                </strong></td>
+        </tr>
+        <tr>
+            <td class="auto-style7">
+                <asp:Button ID="btninicar" runat="server" Text="Iniciar sesión!" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Button ID="btnregistrar" runat="server" Text="Registrarse!" />
+            </td>
+        </tr>
+    </table>
+    <br />
+
 </asp:Content>
 
