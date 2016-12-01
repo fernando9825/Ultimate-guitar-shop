@@ -20,7 +20,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentMenuContextual1" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <h1>MIGUEL PONE ALG REFERNTE A GRACIAS POR HABER COMPRADO</h1>
+    <h1>GRACIAS POR SU COMPRA, ESPERAMOS QUEDE SATISFECHO CON SU PRODUCTO!</h1>
     <table class="auto-style1">
         <tr>
             <td>&nbsp;</td>

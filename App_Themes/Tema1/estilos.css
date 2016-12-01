@@ -1,9 +1,7 @@
 ﻿body {
-    background-image: url(https://riffsofwisdom.files.wordpress.com/2012/03/mccabes9.jpg);
+    background-image: url('../../imagenes/DSC_0003.jpg');
 
-        background-size: cover;
-        
-
+    background-size: cover;
 }
 #cabecera {
     height: 150px;
