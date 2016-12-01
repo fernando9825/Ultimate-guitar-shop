@@ -33,7 +33,7 @@ public class conexion
      * CON
      * BASE DE DATOS */
 
-    SqlConnection con = new SqlConnection("Data Source=.\\express;Initial Catalog=Tiendaguitarras;Integrated Security=True;Pooling=False");
+    SqlConnection con = new SqlConnection("Data Source=sql5028.smarterasp.net;Persist Security Info=True;User ID=DB_A132DD_fernando9825_admin;Password=fernando25");
     public SqlCommand comando;
 
     public object Response { get; private set; }
@@ -125,7 +125,7 @@ public class conexion
 
         try
         {
-            SqlConnection con1 = new SqlConnection("Data Source=.\\express;Initial Catalog=Tiendaguitarras;Integrated Security=True;Pooling=False");
+            SqlConnection con1 = new SqlConnection("Data Source=sql5028.smarterasp.net;Persist Security Info=True;User ID=DB_A132DD_fernando9825_admin;Password=fernando25");
             con1.Open();
             string cadsql = "SELECT *FROM Registro WHERE usuario ='" + busca + "'";
             SqlCommand comando = new SqlCommand(cadsql, con1);
@@ -159,7 +159,7 @@ public class conexion
 
         try
         {
-            SqlConnection con2 = new SqlConnection("Data Source = guitarshop.mssql.somee.com; Persist Security Info=True;User ID = fernando9825_SQLLogin_2; Password=8nwapgzhqt");
+            SqlConnection con2 = new SqlConnection("Data Source=sql5028.smarterasp.net;Persist Security Info=True;User ID=DB_A132DD_fernando9825_admin;Password=fernando25");
             con2.Open();
             string cadsql = "select *from Guitarras where producto ='" + nombreproducto + "'";
             SqlCommand comando = new SqlCommand(cadsql, con2);
@@ -191,7 +191,7 @@ public class conexion
     {
         try
         {
-            SqlConnection con3 = new SqlConnection("Data Source=.\\express;Initial Catalog=Tiendaguitarras;Integrated Security=True;Pooling=False");
+            SqlConnection con3 = new SqlConnection("Data Source=sql5028.smarterasp.net;Persist Security Info=True;User ID=DB_A132DD_fernando9825_admin;Password=fernando25");
             con3.Open();
             string cadsql = "SELECT *FROM Factura WHERE nombre ='" + nombreparafactura + "'";
             SqlCommand comando = new SqlCommand(cadsql, con3);

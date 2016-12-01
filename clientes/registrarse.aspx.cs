@@ -47,15 +47,18 @@ public partial class clientes_registrarse : System.Web.UI.Page
                "ServerControlScript", script, true);
 
 
-                //CAMBIOS
-                Session["persona"] = con.nombre + " " + con.apellido;
+                
 
 
 
                 if (sql != null)
                 {
-
-                    Response.Redirect("/instrumentos/acusticas.aspx");
+                    //CAMBIOS
+                    Session["persona"] = txtnombre.Text + " " + txtapellido.Text;
+                        
+                        Session["nombrecliente"] = txtnombre.Text;
+                        Session["apellidocliente"] = txtapellido.Text;
+                        Response.Redirect("/instrumentos/acusticas.aspx");
 
                 }
 

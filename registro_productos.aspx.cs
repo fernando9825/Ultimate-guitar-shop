@@ -10,7 +10,21 @@ public partial class registro_productos : System.Web.UI.Page
     conexion con = new conexion();
     protected void Page_Load(object sender, EventArgs e)
     {
+        try
+        {
+            if (Session["persona"].ToString() != null)
+            {
+                Response.Redirect("../default.aspx");
+            }
+            else
+            {
 
+            }
+        }
+        catch (Exception)
+        {
+
+        }
     }
 
     protected void Button1_Click(object sender, EventArgs e)

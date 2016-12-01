@@ -17,6 +17,12 @@
     </strong>
     <br />
     <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Cerrar sesión" Visible="false" Enabled="false" />
+    <br />
+    <br />
+    <asp:Label ID="Label1" runat="server" Text="Fernando, ¿Deseas registrar productos?"></asp:Label>
+    <br />
+    <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Registrar productos." />
+    <br />
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 </asp:Content>

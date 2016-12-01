@@ -20,14 +20,11 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentMenuContextual1" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <h1>MIGUEL PONE ALG REFERNTE A GRACIAS POR HABER COMPRADO</h1>
     <table class="auto-style1">
         <tr>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
-            <td class="auto-style3"><strong>Numero de factura:</strong></td>
-            <td>
-                <asp:Label ID="lblfactura" runat="server" CssClass="auto-style3" Text="factura"></asp:Label>
-            </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -186,6 +183,20 @@
             <td class="auto-style4"><strong>Total:</strong></td>
             <td class="auto-style4"><span class="auto-style3">$ </span>
                 <asp:Label ID="lbltotal" runat="server" CssClass="auto-style3" Text="Total"></asp:Label>
+            </td>
+            <td class="auto-style2">&nbsp;</td>
+            <td class="auto-style2">&nbsp;</td>
+            <td class="auto-style2">&nbsp;</td>
+            <td class="auto-style2">&nbsp;</td>
+            <td class="auto-style2">&nbsp;</td>
+            <td class="auto-style2">&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style2">&nbsp;</td>
+            <td class="auto-style2">&nbsp;</td>
+            <td class="auto-style4">Cambio:</td>
+            <td class="auto-style4">$
+                <asp:Label ID="lblcambio" runat="server" Text="cambio"></asp:Label>
             </td>
             <td class="auto-style2">&nbsp;</td>
             <td class="auto-style2">&nbsp;</td>

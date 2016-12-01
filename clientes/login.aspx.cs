@@ -39,7 +39,7 @@ public partial class clientes_login : System.Web.UI.Page
             Session["nombrecliente"] = con.nombre;
             Session["apellidocliente"] = con.apellido;
             
-            Response.Redirect("../default.aspx");          
+            Response.Redirect("../instrumentos/acusticas.aspx");          
             
         }
         if (con.contra == logincontra.Text)

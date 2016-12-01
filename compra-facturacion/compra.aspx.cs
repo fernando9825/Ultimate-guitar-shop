@@ -441,7 +441,7 @@ public partial class compra_facturacion_compra : System.Web.UI.Page
                     entero = Session["cantidad"].ToString();
                     eeentero = Convert.ToUInt32(entero);
 
-                    if (efectivo > precio & eeentero <= hay) 
+                    if (efectivo > precio & eeentero <= hay & eeentero != 0) 
                     {
                         Response.Redirect("../compra-facturacion/factura.aspx");
                         Session.Remove("comprobar");

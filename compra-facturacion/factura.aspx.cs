@@ -43,6 +43,16 @@ public partial class compra_facturacion_factura : System.Web.UI.Page
             total = subtotal * cantidad;
             lbltotal.Text = Convert.ToString(total);
 
+            //Cambio a cliente//
+
+            string efectivo;
+            double dinerocliente;
+            double cambio;
+            efectivo = Session["efectivo"].ToString();
+            dinerocliente = Convert.ToDouble(efectivo);
+            cambio = dinerocliente - total;
+            lblcambio.Text = Convert.ToString(cambio);
+
             //numero de factura
             string sql = "Insert into Factura (nombre, apellido, producto, cantidad, total) values ('" + lblnombre.Text + "','" + lblapellido.Text + "','" + lblproducto.Text + "','" + cantidad + "','" + total + "');";
             con.guardar(sql);
