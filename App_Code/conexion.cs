@@ -203,6 +203,7 @@ public class conexion
                 numerofactura = leer["Id"].ToString();
                 
                 
+                
             }
         }
         catch (Exception)

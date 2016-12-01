@@ -16,9 +16,10 @@ public partial class compra_facturacion_factura : System.Web.UI.Page
         string costo;
         double precio;
         double calculoiva;
-        int cantidad=1;
+        double cantidad=1;
         double subtotal;
         double total=0;
+        string cant;
         
 
         try
@@ -32,6 +33,9 @@ public partial class compra_facturacion_factura : System.Web.UI.Page
             precio = Convert.ToDouble(costo);
             lblprecio.Text =  Convert.ToString(precio);
             iva = Session["precio"].ToString();
+            lblcantidad.Text = Session["cantidad"].ToString();
+            cant = Session["cantidad"].ToString();
+            cantidad = Convert.ToDouble(cant);
             calculoiva = Convert.ToDouble(iva) * 0.13;
             lblprecioiva.Text = Convert.ToString(calculoiva);
             subtotal = precio + calculoiva;
@@ -42,10 +46,12 @@ public partial class compra_facturacion_factura : System.Web.UI.Page
             //numero de factura
             string sql = "Insert into Factura (nombre, apellido, producto, cantidad, total) values ('" + lblnombre.Text + "','" + lblapellido.Text + "','" + lblproducto.Text + "','" + cantidad + "','" + total + "');";
             con.guardar(sql);
-            
-            
+            con.Factura();
+            Session["factura"] = con.numerofactura;
+
 
             //Fin numero de factura
+
 
         }
         catch (Exception E)
@@ -53,8 +59,8 @@ public partial class compra_facturacion_factura : System.Web.UI.Page
             string script = "alert('Hola " + con.nombre + " " + con.apellido + " Lo sentimos, ocurrió el siguiente error!" + E + "')";
             ScriptManager.RegisterStartupScript(this, typeof(Page), "Informacion", script, true);
         }
-        con.Factura();
-            con.numerofactura = lblfactura.Text;
+        try { lblfactura.Text = Session["factura"].ToString(); } catch { }
+        
         
     }
 }

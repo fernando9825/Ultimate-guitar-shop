@@ -362,11 +362,11 @@ public partial class compra_facturacion_compra : System.Web.UI.Page
     }
 
 
-
+    public double efectivo;
+    public double cantidad;
     protected void btncomprar_Click(object sender, EventArgs e)
     {
-        double efectivo;
-        double cantidad;
+     
         if (txtefectivo.Text != "" & txtcantidad.Text != "")
         {
             try
@@ -379,13 +379,12 @@ public partial class compra_facturacion_compra : System.Web.UI.Page
                 string script6 = "alert('Solo numeros, no letras')";
                 ScriptManager.RegisterStartupScript(this, typeof(Page), "Informacion", script6, true);
             }
-        }
-        if (txtcantidad.Text != "")
-        {
+
             try
             {
                 cantidad = Convert.ToUInt32(txtcantidad.Text);
                 Session["cantidad"] = Convert.ToString(txtcantidad.Text);
+                
             }
             catch
             {
@@ -393,7 +392,8 @@ public partial class compra_facturacion_compra : System.Web.UI.Page
                 ScriptManager.RegisterStartupScript(this, typeof(Page), "Informacion", script6, true);
             }
         }
-        try { Session["comprobar"] = "si"; } catch { } 
+        try { Session["comprobar"] = "si"; } catch { }
+
         redireccionar();
     }
 
@@ -405,7 +405,14 @@ public partial class compra_facturacion_compra : System.Web.UI.Page
     public void redireccionar()
     {
 
-        
+        string money;
+        double efectivo;
+        string entero;
+        double eeentero;
+        double precio;
+        string costo;
+        string existencias;
+        double hay;
         try
         {
             
@@ -423,9 +430,30 @@ public partial class compra_facturacion_compra : System.Web.UI.Page
             }
             else
             {
+                if (Session["efectivo"].ToString() != null & Session["cantidad"].ToString() != null)
+                {
+                    existencias = Session["existencias"].ToString();
+                    hay = Convert.ToDouble(existencias);
+                    costo = Session["precio"].ToString();
+                    precio = Convert.ToDouble(costo);
+                    money = Session["efectivo"].ToString();
+                    efectivo = Convert.ToDouble(money);
+                    entero = Session["cantidad"].ToString();
+                    eeentero = Convert.ToUInt32(entero);
+
+                    if (efectivo > precio & eeentero <= hay) 
+                    {
+                        Response.Redirect("../compra-facturacion/factura.aspx");
+                        Session.Remove("comprobar");
+                    }
+                    else
+                    {
+                        string script6 = "alert('Revise, que su efectivo sea mayor que el precio del instrumento o que la unidadades que desea comprar, sea un numero entero menor que las existencias disponibles, gracias.')";
+                        ScriptManager.RegisterStartupScript(this, typeof(Page), "Informacion", script6, true);
+                    }
+                    
+                }
                 
-                Response.Redirect("../compra-facturacion/factura.aspx");
-                Session.Remove("comprobar");
             }
             
         }
