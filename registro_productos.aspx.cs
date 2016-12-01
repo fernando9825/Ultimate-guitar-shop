@@ -12,9 +12,11 @@ public partial class registro_productos : System.Web.UI.Page
     {
         try
         {
-            if (Session["persona"].ToString() != null)
+            if (Session["persona"].ToString() == "Fernando Alvarado")
             {
-                Response.Redirect("../default.aspx");
+                string script2 = "alert('Bienvendo, Administrador, Fernando Alvarado.');";
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "Informacion", script2, true);
+               
             }
             else
             {

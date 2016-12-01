@@ -69,7 +69,12 @@ public partial class compra_facturacion_factura : System.Web.UI.Page
             string script = "alert('Hola " + con.nombre + " " + con.apellido + " Lo sentimos, ocurrió el siguiente error!" + E + "')";
             ScriptManager.RegisterStartupScript(this, typeof(Page), "Informacion", script, true);
         }
-        try { lblfactura.Text = Session["factura"].ToString(); } catch { }
+
+
+        //Cambiar Existencias de PRODUCTOS.
+
+       
+       
         
         
     }
