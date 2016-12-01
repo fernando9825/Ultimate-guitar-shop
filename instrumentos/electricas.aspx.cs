@@ -11,6 +11,7 @@ public partial class instrumentos_electricas : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
+        try { Session["comprobar"] = "si"; } catch { }
         Button22.Enabled = false;
         Button22.Visible = false;
         try

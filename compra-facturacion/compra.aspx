@@ -82,6 +82,27 @@
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>
+                &nbsp;</td>
+        </tr>
+    </table>
+    <br />
+    <table class="auto-style1">
+        <tr>
+            <td>CEfectivo</td>
+            <td>
+                
+                <asp:TextBox ID="txtefectivo" runat="server"></asp:TextBox>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>¿Cuántas unidades desea?</td>
+            <td>
+                <asp:TextBox ID="txtcantidad" runat="server"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style7" colspan="2">
                 <asp:Button ID="btncomprar" runat="server" CssClass="auto-style2" Text="Comprar!" OnClick="btncomprar_Click" />
             </td>
         </tr>
@@ -95,9 +116,9 @@
         </tr>
         <tr>
             <td class="auto-style7">
-                <asp:Button ID="btninicar" runat="server" Text="Iniciar sesión!" />
+                <asp:Button ID="btninicar" runat="server" Text="Iniciar sesión!" OnClick="btninicar_Click" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Button ID="btnregistrar" runat="server" Text="Registrarse!" />
+                <asp:Button ID="btnregistrar" runat="server" Text="Registrarse!" OnClick="btnregistrar_Click" />
             </td>
         </tr>
     </table>

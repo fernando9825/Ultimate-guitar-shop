@@ -9,6 +9,7 @@ public partial class instrumentos_clasicas : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        try { Session["comprobar"] = "si"; } catch { }
         Button19.Enabled = false;
         Button19.Visible = false;
         try

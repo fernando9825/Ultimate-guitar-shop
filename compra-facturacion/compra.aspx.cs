@@ -19,8 +19,33 @@ public partial class compra_facturacion_compra : System.Web.UI.Page
         btnregistrar.Enabled = false;
         btnregistrar.Visible = false;
         lblinformacion.Visible = false;
+        txtcantidad.Visible = false;
+        txtcantidad.Enabled = false;
+        txtefectivo.Enabled = false;
+        txtefectivo.Visible = false;
+        btncomprar.Enabled = false;
+        btncomprar.Visible = false;
         Session["aviso"] = "Lo sentimos, sera necesario que inicies sesión o registrarte para que puedas llevar a cabo la comprar del producto.";
 
+        try
+        {
+            if (Session["persona"].ToString() != null)
+            {
+                txtcantidad.Visible = true;
+                txtcantidad.Enabled = true;
+                txtefectivo.Enabled = true;
+                txtefectivo.Visible = true;
+                btncomprar.Enabled = true;
+                btncomprar.Visible = true;
+                btninicar.Enabled = false;
+                btninicar.Visible = false;
+                btnregistrar.Enabled = false;
+                btnregistrar.Visible = false;
+                lblinformacion.Visible = false;
+            }
+        }
+        catch { }
+       
         try
         {
             
@@ -32,6 +57,7 @@ public partial class compra_facturacion_compra : System.Web.UI.Page
                 btnregistrar.Visible = true;
                 lblinformacion.Visible = true;
                 lblinformacion.Enabled = true;
+            
                 lblinformacion.Text = Session["aviso"].ToString();
                 Session.Remove("comprobar");
             }
@@ -339,10 +365,43 @@ public partial class compra_facturacion_compra : System.Web.UI.Page
 
     protected void btncomprar_Click(object sender, EventArgs e)
     {
-        Session["comprobar"] = "si";
+        double efectivo;
+        double cantidad;
+        if (txtefectivo.Text != "" & txtcantidad.Text != "")
+        {
+            try
+            {
+                efectivo = Convert.ToDouble(txtefectivo.Text);
+                Session["efectivo"] = Convert.ToString(txtefectivo.Text);
+            }
+            catch
+            {
+                string script6 = "alert('Solo numeros, no letras')";
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "Informacion", script6, true);
+            }
+        }
+        if (txtcantidad.Text != "")
+        {
+            try
+            {
+                cantidad = Convert.ToUInt32(txtcantidad.Text);
+                Session["cantidad"] = Convert.ToString(txtcantidad.Text);
+            }
+            catch
+            {
+                string script6 = "alert('Solo numeros enteros')";
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "Informacion", script6, true);
+            }
+        }
+        try { Session["comprobar"] = "si"; } catch { } 
         redireccionar();
     }
+
+
+
     public int verficar = 0;
+
+
     public void redireccionar()
     {
 
@@ -359,10 +418,12 @@ public partial class compra_facturacion_compra : System.Web.UI.Page
                 btnregistrar.Visible = true;
                 lblinformacion.Visible = true;
                 lblinformacion.Enabled = true;
+              
                 lblinformacion.Text = Session["aviso"].ToString();
             }
             else
             {
+                
                 Response.Redirect("../compra-facturacion/factura.aspx");
                 Session.Remove("comprobar");
             }
@@ -380,6 +441,16 @@ public partial class compra_facturacion_compra : System.Web.UI.Page
     {
         string script6 = "alert('Hola, ... disculpa las molestias, sera necesario que te registres para proceder con la compra')";
         ScriptManager.RegisterStartupScript(this, typeof(Page), "Informacion", script6, true);
+    }
+
+    protected void btninicar_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("../clientes/login.aspx");
+    }
+
+    protected void btnregistrar_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("../clientes/registrarse.aspx");
     }
 }
 

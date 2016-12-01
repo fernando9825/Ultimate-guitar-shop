@@ -9,6 +9,7 @@ public partial class contacto_contacto : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        try { Session["comprobar"] = "si"; } catch { }
 
     }
 }
